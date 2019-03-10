@@ -12,7 +12,7 @@ Combining an ultrasonic Sensor and a Servo Motor with the platform Raspberry Pi 
 The Primary goals are:
 - Implement ELMA into Raspberry Pi.
 - Define a StateMachine called 'detection' with ELMA combining an ultrasonic sensor and a servo motor.
-    <img src="images/Statemachine_detection.png" width="620"></image>
+    <img src="images/Statemachine_detection.PNG" width="620"></image>
 - Utilize a library that allows me to use the bi-directional I/O pins in C++.
 
 Resources
