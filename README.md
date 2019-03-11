@@ -1,7 +1,4 @@
-ELMA-RaspberryPi
-===
-
-Project: 180° Range Search Detection Object 
+180° Range Search Detection Object 
 ===
 
 Description 
