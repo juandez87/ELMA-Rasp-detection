@@ -18,8 +18,8 @@ Resources
 To complete this project I will use:
 
 - Raspberry Pi 3 B+ 
-- SG90 Micro Servo HC-SR04 
-- Ultrasonic Module Distance Sensor
+- SG90 Micro Servo  
+- Ultrasonic Module Distance Sensor HC-SR04
 
 Milestones
 ---
