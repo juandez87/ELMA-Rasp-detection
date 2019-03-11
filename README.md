@@ -29,4 +29,4 @@ Milestones
 1. build the Googletest for 'detection' -- 3/14
 1. port the c++ libraries in to raspberry. --3/16
 1. completing the API documentation. -- 3/17
-1. completing final project. --3/20
+1. completing final project and submission. --3/21
