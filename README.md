@@ -24,3 +24,12 @@ To complete this project I will use:
 - SG90 Micro Servo HC-SR04 
 - Ultrasonic Module Distance Sensor
 
+Milestones
+---
+
+1. Assemble all the components to connect to the raspberry -- 3/11
+1. build the StateMachine 'detection' -- 3/13
+1. build the Googletest for 'detection' -- 3/14
+1. port the c++ libraries in to raspberry. --3/16
+1. completing the API documentation. -- 3/17
+1. completing final project. --3/20
