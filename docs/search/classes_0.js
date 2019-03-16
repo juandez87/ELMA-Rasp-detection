@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['channel',['Channel',['../classelma_1_1Channel.html',1,'elma']]],
-  ['client',['Client',['../classelma_1_1Client.html',1,'elma']]]
+  ['basicprocess',['BasicProcess',['../classbasic__example_1_1BasicProcess.html',1,'basic_example']]]
 ];

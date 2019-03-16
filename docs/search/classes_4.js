@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['state',['State',['../classelma_1_1State.html',1,'elma']]],
-  ['statemachine',['StateMachine',['../classelma_1_1StateMachine.html',1,'elma']]]
+  ['manager',['Manager',['../classelma_1_1Manager.html',1,'elma']]],
+  ['mode',['Mode',['../classtoggle__switch__example_1_1Mode.html',1,'toggle_switch_example']]]
 ];
