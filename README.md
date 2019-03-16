@@ -1,119 +1,32 @@
-Elma
+180° Range Search Detection Object 
 ===
 
-Elma is an event loop and process manager for embedded and reactive systems. Elma is structured as a C++ library of classes on top of which you build your own C++ project. It keeps track of processes, finite state machines, events, and communication channels, executing them at specified frequencies. Elma was developed as part of the University of Washington's [ECE P 520 course](https://github.com/klavins/ECEP520) on advanced embedded systems programming. More information on how Elma was designed can be found in the links below:
-- [Event loop management](https://github.com/klavins/ECEP520/tree/master/week_6)
-- [Events and finite state machines](https://github.com/klavins/ECEP520/tree/master/week_7)
-- [HTTP in event loops](https://github.com/klavins/ECEP520/blob/master/week_8)
-
-Installation
-===
-
-The source code for Elma [is on Github](https://github.com/klavinslab/elma).
-
-From Dockerhub
+Description 
 ---
 
-To get started, you will need a C++ build environment. We have provided one with the Docker container `elma`, which you can use as follows:
+Combining an ultrasonic Sensor and a Servo Motor with the platform Raspberry Pi 3 I will build a simple system that can search and detect an Object. This detection system will be moving in a range of 180° back and forward stopping when detecting the object within a distance between 6 and 8 inches. 
 
-    git clone https://github.com/klavinslab/elma.git
-    cd elma
-    docker run -v $PWD:/source -it klavins/elma:latest bash
-    make
-    examples/bin/basic
+The Primary goals are:
+- Implement ELMA into Raspberry Pi.
+- Define a StateMachine called 'detection' with ELMA combining an ultrasonic sensor and a servo motor.
+    <img src="images/Statemachine_detection.PNG" width="620"></image>
+- Utilize a library that allows me to use the bi-directional I/O pins in C++.
+- Implement google test.
 
-From the Dockerfile
+Resources
+---
+To complete this project I will use:
+
+- Raspberry Pi 3 B+ 
+- SG90 Micro Servo  
+- Ultrasonic Module Distance Sensor HC-SR04
+
+Milestones
 ---
 
-You can also build the docker environment, described in env/Dockerfile, yourself, with the following commands:
-
-    git clone https://github.com/klavinslab/elma.git
-    cd elma
-    docker build -t myelma .
-    docker run -v $PWD:/source -it myelma bash
-    make
-    examples/bin/basic
-
-Manual Installation
----
-
-To install Elma without using Docker, you will need to install the following tools:
-- [gcc](https://gcc.gnu.org/) 4.9 or an equivalent C/C++ compiler that supports at least C++14
-- Make (if you want to use the makefile. Alternatively, you can use some other build manager)
-- [Doxygen](http://www.doxygen.nl/)
-- [Google Test](https://github.com/google/googletest)
-- Neils Lohmann's JSON library: https://github.com/nlohmann/json
-- [My fork](https://github.com/klavins/cpp-httplib.git) of [yhirose](https://github.com/yhirose)'s HTTP library
-
-Installation on Unix systems (e.g. Raspbian)
----
-
-First install required packages available through apt-get
-
-    sudo apt-get update
-    sudo apt-get install -y cmake
-    sudo apt-get install -y cppcheck
-    sudo apt-get install -y graphviz
-    sudo apt-get install -y doxygen
-    sudo apt-get install -y cmake
-    sudo apt-get install -y libssl-dev
-
-Next, install Google Test
-
-    cd /usr/src
-    sudo git clone https://github.com/google/googletest.git
-    cd googletest
-    sudo mkdir install
-    cd install
-    sudo cmake ../
-    sudo make
-    sudo make install
-
-Next, install the json library
-
-    sudo mkdir /usr/local/include/json
-    cd /usr/local/include/json
-    sudo curl -O -J -L https://github.com/nlohmann/json/releases/download/v3.5.0/json.hpp
-    sudo mv json.hpp json.h
-
-Next, install httplib
-
-    cd /tmp
-    git clone https://github.com/klavins/cpp-httplib.git
-    sudo mkdir /usr/local/include/httplib
-    sudo mv /tmp/cpp-httplib/httplib.h /usr/local/include/httplib
-
-Now you should be ready to install elma:
-
-    cd ~
-    mkdir Code
-    cd Code
-    git clone https://github.com/klavinslab/elma.git
-    cd elma
-    make
-
-Note that the Makefile should detect if you are on a pi by using the command
-
-    uname -m
-
-which on a pi 3 model B+ returns 'armv71'. If your pi is different, you might need to change the ifeq statments in `test/Makefile` and `examples/Makefile`.
-
-If you would like to treat elma as a library, so you can link in other code, you should link to the relevant files in to the unversal system resources (usr) as follows:
-```bash
-ln -s include /usr/local/include/elma
-ln -s lib/libelma.a /usr/local/lib/libelma.a
-```
-Then you can do 
-```c++
-#include "elma/elma.h"
-```
-in your code and use the `-lelma` flag while linking. See the [example elma project](https://github.com/klavinslab/elma_project) for an example.
-
-Usage
-===
-See the examples in the `examples` directory for how to build new event loops with Elma.
-
-License
-===
-
-This software is open source and uses the MIT license. Details can be found [here](https://github.com/klavinslab/elma).
+1. Assemble all the components to connect to the raspberry -- 3/11
+1. build the StateMachine 'detection' -- 3/13
+1. build the Googletest for 'detection' -- 3/14
+1. port the c++ libraries in to raspberry. --3/16
+1. completing the API documentation. -- 3/17
+1. completing final project and submission. --3/21
