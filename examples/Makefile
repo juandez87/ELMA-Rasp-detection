@@ -22,7 +22,7 @@ LIB         := -lgtest -lpthread $(ASAN) -lelma -lssl -lcrypto
 INCLUDE		:= -I../include
 LIBDIR		:= -L../lib
 ELMALIB		:= ../lib/libelma.a
-EXTRA_LIBS	:= -lwiringPi
+#EXTRA_LIBS	:= -lwiringPi
 
 #Files
 TARGETDIR	 := ./bin
@@ -42,7 +42,7 @@ clean:
 
 # Compile
 $(TARGETDIR)/%: %.cc $(ELMALIB)
-	$(CC) $(CFLAGS) $(INCLUDE) $< $(LIBDIR) $(LIB) -o $@ $(EXTRA_LIBS)
+	$(CC) $(CFLAGS) $(INCLUDE) $< $(LIBDIR) $(LIB) -o $@ 
 
 # bin/basic: basic.cc
 # 	$(CC) $(CFLAGS) $(INCLUDE) $<  $(LIBDIR) $(LIB) -o $@

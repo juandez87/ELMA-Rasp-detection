@@ -49,3 +49,14 @@ RUN ln -s /usr/local/src/elma/lib/libelma.a /usr/local/lib
 
 WORKDIR /source
 
+# Install wiringPi
+#RUN apt-get update && apt-get install -y build-essential sudo
+RUN git clone git://git.drogon.net/wiringPi
+RUN cd wiringPi && ./build
+
+# Define working directory
+WORKDIR /data
+
+# Define default command
+CMD ["gpio"]
+
