@@ -37,4 +37,4 @@ Updates
 for the Milestones I have accomplish so far in the project are:
 
 - Assemble all the components to connect the raspberry. here are the schematics of the conections 
-  <img src="images/circuit_scheme.png" width="420"></image> <img src="images/project_bb.png" width="420"></image>
+  <img src="images/circuit_schem.png" width="420"></image> <img src="images/project_bb.png" width="420"></image>
