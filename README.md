@@ -41,9 +41,11 @@ For these Milestones I have accomplish so far in the project:
   
   Also I added 1 LED with 3 colors to test that the wiringPi libraries are working with ELMA properly after compiling the code.
   
-- Port the C++ libraries in to raspberry. I will change this Milestone instead of C++ libraries it will be the [ELMA]( https://github.com/klavinslab/elma/) and [WiringPi](http://www.wiringpi.com/) libraries since most of the C++ libraries are already included. The WiringPi library allows me to get access and control the GPIO pins from the programming language of C and C++. I tried to install ELMA in both ways, first from the Docker file and second from the step by step of the Unix systems (e.g. Raspbian) instructions. 
+- Port the C++ libraries in to raspberry. I will change this Milestone instead of C++ libraries it will be the [ELMA]( https://github.com/klavinslab/elma/) and [WiringPi](http://www.wiringpi.com/) libraries since most of the C++ libraries are already included. The WiringPi library allows me to get access and control the GPIO pins from the programming language of C and C++. 
   
-  From the Docker file it successfully installed but with the inconvenient that it only and run the Makefile and executes the code inside the Docker container not outside. Plus it is complex to control the GPIO pins from the container even if the libraries of WiringPi are installed and included. 
+  I tried to install ELMA in both ways, first from the Docker file and second from the step by step of the Unix systems (e.g. Raspbian) instructions. 
+  
+  From the Docker file it successfully installed but with the inconvenient that it only run the Makefile and executes the code inside the Docker container not outside. Plus it is complex to control the GPIO pins from the container even if the libraries of WiringPi are installed and included. 
   
   In the second way following the instructions on how to install Elma in a Unix systems (e.g. Raspbian) it works great plus runs the code normally and lets me use the WiringPi library in the examples folder keeping in mind that on the Makefile you have to add the -lwiringPi like this.
 
