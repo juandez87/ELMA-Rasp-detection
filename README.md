@@ -34,7 +34,9 @@ Milestones
 Updates
 ---
 
-for the Milestones I have accomplish so far in the project are:
+For the Milestones I have accomplish so far in the project are:
 
-- Assemble all the components to connect the raspberry. here are the schematics of the conections 
-  <img src="images/circuit_schem.png" width="420"></image> <img src="images/project_bb.png" width="420"></image>
+- Assemble all the components to connect the raspberry. Here are the schematics made on Fritzing software of the connections.  
+  <img src="images/circuit_schem.png" width="420"></image> <img src="images/project_bb.png" width="420"></image
+  
+  Also I added 1 LED with 3 colors to test that the wiringPi libraries are working with ELMA properly after compiling the code.
