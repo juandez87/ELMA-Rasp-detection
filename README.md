@@ -30,3 +30,11 @@ Milestones
 1. port the c++ libraries in to raspberry. --3/16
 1. completing the API documentation. -- 3/17
 1. completing final project and submission. --3/21
+
+Updates
+---
+
+for the Milestones I have accomplish so far in the project are:
+
+- Assemble all the components to connect the raspberry. here are the schematics of the conections 
+  <img src="images/circuit_scheme.PNG" width="420"></image> <img src="images/project_bb.PNG" width="420"></image>
