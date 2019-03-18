@@ -34,14 +34,14 @@ Milestones
 Updates
 ---
 
-For the Milestones I have accomplish so far in the project are:
+For these Milestones I have accomplish so far in the project:
 
 - Assemble all the components to connect the raspberry. Here are the schematics made on Fritzing software of the connections.  
   <img src="images/circuit_schem.png" width="420"></image> <img src="images/project_bb.png" width="420"></image>
   
   Also I added 1 LED with 3 colors to test that the wiringPi libraries are working with ELMA properly after compiling the code.
   
-  I will change this Milestone instead of C++ libraries it will be the [ELMA]( https://github.com/klavinslab/elma/) and [WiringPi](http://www.wiringpi.com/) libraries since most of the C++ libraries are already included. The WiringPi library allows me to get access and control the GPIO pins from the programming language of C and C++. I tried to install ELMA in both ways, first from the Docker file and second from the step by step of the Unix systems (e.g. Raspbian) instructions. 
+- Port the C++ libraries in to raspberry. I will change this Milestone instead of C++ libraries it will be the [ELMA]( https://github.com/klavinslab/elma/) and [WiringPi](http://www.wiringpi.com/) libraries since most of the C++ libraries are already included. The WiringPi library allows me to get access and control the GPIO pins from the programming language of C and C++. I tried to install ELMA in both ways, first from the Docker file and second from the step by step of the Unix systems (e.g. Raspbian) instructions. 
   
   From the Docker file it successfully installed but with the inconvenient that it only and run the Makefile and executes the code inside the Docker container not outside. Plus it is complex to control the GPIO pins from the container even if the libraries of WiringPi are installed and included. 
   
