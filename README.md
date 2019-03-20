@@ -56,4 +56,24 @@ For these Milestones I have accomplish so far in the project:
         LIBDIR		:= -L../lib
         ELMALIB		:= ../lib/libelma.a
 
+- Build the StateMachine 'detection': I Build my code base on the stopwach of [elma_project](https://github.com/klavinslab/elma_project.git) with some changes like adding the libraries of [WiringPi](http://www.wiringpi.com/) and setting up the GPIO ports that I will use. 
+
+        #define BLUE 1
+        #define GREEN 2 
+        #define RED 3
+        #define ECHO 0
+        #define TRIGER 7
+        #define PWM 4
+
+        void Detection::setup(){
+            wiringPiSetup () ;
+            pinMode (BLUE, OUTPUT) ;
+            pinMode (GREEN, OUTPUT) ;
+            pinMode (RED, OUTPUT) ;
+            pinMode (ECHO, INPUT) ;
+            pinMode (TRIGER, OUTPUT) ;
+            softPwmCreate (PWM, 0, 200) ;
+        }
+        
+  I added a function setup() to initialize all the GPIO Pins.
 
