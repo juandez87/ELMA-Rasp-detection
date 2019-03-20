@@ -56,7 +56,7 @@ For these Milestones I have accomplish so far in the project:
         LIBDIR		:= -L../lib
         ELMALIB		:= ../lib/libelma.a
 
-- Build the StateMachine 'detection': I Build my code base on the stopwach of [elma_project](https://github.com/klavinslab/elma_project.git) with some changes like adding the libraries of [WiringPi](http://www.wiringpi.com/), setting up the GPIO ports that will be use and chaging most ot the transitions. 
+- Build the StateMachine 'detection': I Build my code base on the stopwach of [elma_project](https://github.com/klavinslab/elma_project.git) with some changes like adding the libraries of [WiringPi](http://www.wiringpi.com/), setting up the GPIO ports that will be use and replacing most ot the transitions. 
 
         #define BLUE 1
         #define GREEN 2 
