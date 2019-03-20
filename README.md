@@ -56,7 +56,9 @@ For these Milestones I have accomplish so far in the project:
         LIBDIR		:= -L../lib
         ELMALIB		:= ../lib/libelma.a
 
-- Build the StateMachine 'detection': I Build my code base on the stopwach of [elma_project](https://github.com/klavinslab/elma_project.git) with some changes like adding the libraries of [WiringPi](http://www.wiringpi.com/), setting up the GPIO ports that will be use and replacing most ot the transitions. 
+- Build the StateMachine 'detection': I Build my code base on the stopwach of [elma_project](https://github.com/klavinslab/elma_project.git) combining the features of accessing the time in milliseconds using it to increment the pulse wide modulation (PWM) in a range of 180° will help the program avoid using unnecessary loops or delays making it more efficient. Also I will use the User interface so I can start the program and see the distance of the object in centimeters and Inches plus the position of the servo in degrees.
+
+  Another feature is the addition of [WiringPi](http://www.wiringpi.com/) Library to access and control the GPIO ports. here is a definition of the ports that are going to be use.
 
         #define BLUE 1
         #define GREEN 2 
