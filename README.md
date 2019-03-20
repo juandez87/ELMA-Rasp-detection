@@ -24,10 +24,10 @@ To complete this project I will use:
 Milestones
 ---
 
-1. Assemble all the components to connect to the raspberry -- 3/11
-1. build the StateMachine 'detection' -- 3/13
+1. 【Done】Assemble all the components to connect to the raspberry -- 3/11
+1. 【Done】build the StateMachine 'detection' -- 3/13
 1. build the Googletest for 'detection' -- 3/14
-1. port the ELMA libraries in to raspberry. --3/16
+1. 【Done】port the ELMA libraries in to raspberry. --3/16
 1. completing the API documentation. -- 3/17
 1. completing final project and submission. --3/21
 
