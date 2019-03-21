@@ -79,5 +79,4 @@ For these Milestones I have accomplish so far in the project:
         
   Also I added a function setup() in detection to initialize all the GPIO Pins.
 
-- Build the google testof detection: For the Practical test I will trace an area with the distance and angles of measurements, plus adding objects in different places so that the servo motor is stopping when the ultrasonic sensor measures the distance to that object Like the image below.
- <img src="images/test.png" width="420"></image>
+- Build the google testof detection: For the Practical test I will trace an area with the distance and angles of measurements, plus adding objects in different places so that the servo motor is stopping when the ultrasonic sensor measures the distance to that object Like the image below. <img src="images/test.PNG" width="420"></image>
