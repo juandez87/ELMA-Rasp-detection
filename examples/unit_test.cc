@@ -11,7 +11,9 @@ namespace {
     using namespace stopwatch;
 
     TEST(StopWatch,Construction) { 
+
         StopWatch sw; 
+
         ASSERT_EQ("off", sw.current().name());
     }
 

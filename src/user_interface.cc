@@ -47,7 +47,6 @@ void UserInterface::update() {
     }
     
     dis = _stopwatch.getCM(); //gets the distance in centimeters from the Ultrasonic sensor
-    //int dis = 24;
     if(dis>=22 && dis<=28){
         if (button == true && startkey == false){
             mvprintw(10,1,"state: STOP");
@@ -84,9 +83,10 @@ void UserInterface::update() {
     _stopwatch.searching(abs(_pwm-temp)); // this function gives the PWM value to the servo motor
     mvprintw(4, 1, "----------------------------------");
     mvprintw(6, 1, "servo PWM %03.1lf", abs(_pwm-temp));
-    //mvprintw(7, 1, "servo %03.1lf", _pwm);
     mvprintw(7, 1, "Distance: %d cm\n", dis);// distance in centimeters
     mvprintw(8, 1, "          %02.0lf inch\n", dis/2.54); // distance in inches
+    //mvprintw(14, 1, "state %s", _stopwatch.current().name()); // 
+    
     
     // NOTE: Since the detection program is running every 10 ms, we should sleep
     //       the ui to give processing time back to the OS. It is debatable
