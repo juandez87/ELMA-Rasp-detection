@@ -49,21 +49,21 @@ void UserInterface::update() {
     dis = _stopwatch.getCM(); //gets the distance in centimeters from the Ultrasonic sensor
     //int dis = 24;
     if(dis>=22 && dis<=28){
-        if (button == true){
+        if (button == true && startkey == false){
             mvprintw(10,1,"state: STOP");
             button = false ;
             emit(Event("start/stop"));
         } 
     }
     else if(dis<22){
-        if (button == false){
+        if (button == false && startkey == false){
             mvprintw(10,1,"state: RUN ");
             button = true ;
             emit(Event("start/stop"));
         }
     } 
     else if(dis>28){
-        if (button == false){
+        if (button == false && startkey == false){
             button = true ;
             emit(Event("start/stop"));
             mvprintw(10,1,"state: RUN ");
