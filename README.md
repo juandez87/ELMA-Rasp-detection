@@ -21,6 +21,19 @@ To complete this project I will use:
 - SG90 Micro Servo  
 - Ultrasonic Module Distance Sensor HC-SR04
 
+Execution
+---
+To run the detection program, type
+
+    sudo ./examples/bin/main
+
+the program detection has to be started manually via the keyboard, it also can stop and reset, via these keys:
+- **s**: Start or stop
+- **r**: Reset
+- **q**: Quit
+
+
+
 Milestones
 ---
 
@@ -28,8 +41,8 @@ Milestones
 1. 【Done】build the StateMachine 'detection' -- 3/13
 1. build the Googletest for 'detection' -- 3/14
 1. 【Done】port the ELMA libraries in to raspberry. --3/16
-1. completing the API documentation. -- 3/17
-1. completing final project and submission. --3/21
+1. 【Done】completing the API documentation. -- 3/17
+1. 【Done】completing final project and submission. --3/21
 
 Updates
 ---
@@ -81,6 +94,6 @@ For these Milestones I have accomplish so far in the project:
 
 - Build the google testof detection: For the Practical test I will trace an area with the distance and angles of measurements, plus adding objects in different places so that the servo motor is stopping when the ultrasonic sensor measures the distance to that object Like the image below.
 
-  <img src="images/test.PNG" width="420"></image>
+  <img src="images/test.PNG" width="420"></image> <img src="images/test.jpg" width="420"></image>
   
   For the google test I will put objects in front of the HC-SR04 sensor in different distances so it can determine if the object is in the range of 9 and 11 and with that output the response if the motor should be running or stop. also if the user doesnt have an Ultrasonic sensor they can manually type the distance in a variable ot see the reponse.
