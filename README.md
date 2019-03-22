@@ -31,7 +31,7 @@ the program detection has to be started manually via the keyboard, it also can s
 - **s**: Start or stop
 - **r**: Reset
 - **q**: Quit
-after it stars it will run automatically.
+Ater it stars it will run automatically.
 
 
 
