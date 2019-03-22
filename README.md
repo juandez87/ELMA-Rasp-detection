@@ -31,8 +31,10 @@ the program detection has to be started manually via the keyboard, it also can s
 - **s**: Start or stop
 - **r**: Reset
 - **q**: Quit
-Ater it stars it will run automatically.
 
+After it starts it will run automatically. It has LED indicators:
+- **RED**: Detects object/stop
+- **GREEN**: Rotating Running
 
 
 Milestones
