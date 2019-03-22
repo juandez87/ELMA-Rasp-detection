@@ -23,10 +23,19 @@ void UserInterface::update() {
     switch ( c ) {            
         case 's':
             emit(Event("start/stop"));
+            if (startkey == true){
+                mvprintw(10,1,"state: RUN ");
+                startkey = false;
+            }else if (startkey == false){
+                mvprintw(10,1,"state: STOP ");
+                startkey = true;
+            }
             break;
         case 'r':
             emit(Event("reset"));
+            startkey = false;
             clear(); // Clear the screen of old stuff
+            mvprintw(10,1,"state:     ");
             break;
         // case 'l':
         //     emit(Event("lap"));
@@ -37,18 +46,18 @@ void UserInterface::update() {
             break;
     }
     
-    int dis = _stopwatch.getCM(); //gets the distance in centimeters from the Ultrasonic sensor
+    dis = _stopwatch.getCM(); //gets the distance in centimeters from the Ultrasonic sensor
     //int dis = 24;
     if(dis>=22 && dis<=28){
         if (button == true){
-            mvprintw(11,1,"state: STOP");
+            mvprintw(10,1,"state: STOP");
             button = false ;
             emit(Event("start/stop"));
         } 
     }
     else if(dis<22){
         if (button == false){
-            mvprintw(11,1,"state: RUN ");
+            mvprintw(10,1,"state: RUN ");
             button = true ;
             emit(Event("start/stop"));
         }
@@ -57,7 +66,7 @@ void UserInterface::update() {
         if (button == false){
             button = true ;
             emit(Event("start/stop"));
-            mvprintw(11,1,"state: RUN ");
+            mvprintw(10,1,"state: RUN ");
         }
     } 
 
@@ -74,11 +83,11 @@ void UserInterface::update() {
     }
     _stopwatch.searching(abs(_pwm-temp)); // this function gives the PWM value to the servo motor
     mvprintw(4, 1, "----------------------------------");
-    //mvprintw(5, 1, "angle %03.1lf", abs(_pwm-temp)*5.29411);
-    mvprintw(7, 1, "servo %03.1lf", _pwm);
-    mvprintw(9, 1, "Distance: %dcm\n", _stopwatch.getCM());
-    mvprintw(10, 1, "       : %2.0dinch\n", _stopwatch.getCM()/2.54);
-   
+    mvprintw(6, 1, "servo PWM %03.1lf", abs(_pwm-temp));
+    //mvprintw(7, 1, "servo %03.1lf", _pwm);
+    mvprintw(7, 1, "Distance: %d cm\n", dis);// distance in centimeters
+    mvprintw(8, 1, "          %02.0lf inch\n", dis/2.54); // distance in inches
+    
     // NOTE: Since the detection program is running every 10 ms, we should sleep
     //       the ui to give processing time back to the OS. It is debatable
     //       whether this is the right place to put this. It could also become

@@ -98,7 +98,7 @@ int StopWatch::getCM() {
 
     //Get distance in cm
     int distance = travelTime / 58;
-    delay(1000);
+    delay(500);
     return distance;
 }
 

@@ -32,8 +32,10 @@ namespace stopwatch {
 
         private:
         StopWatch& _stopwatch;
-        bool button = true;
+        bool button = true,
+             startkey = true;
         int temp = 0;
+        int dis = 0;
 
     };
 
