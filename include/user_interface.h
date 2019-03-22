@@ -5,20 +5,20 @@
 
 #include "detection.h"
 
-namespace stopwatch {
+namespace detection {
 
     using namespace std::chrono;
     using namespace elma;
-    using namespace stopwatch;
+    using namespace detection;
 
-    //! A user interface for the a StopWatch object
+    //! A user interface for the a Detection object
     class UserInterface : public Process {
 
         public:
 
-        //! Create a new stopwatch user interface using curses
-        //! \param sw A reference to a StopWatch object
-        UserInterface(StopWatch& sw);
+        //! Create a new detection user interface using curses
+        //! \param sw A reference to a Detection object
+        UserInterface(Detection& sw);
 
         void init() {}
         void start() {}
@@ -31,7 +31,7 @@ namespace stopwatch {
         void stop() {}
 
         private:
-        StopWatch& _stopwatch;
+        Detection& _detection;
         bool button = true,
              startkey = true;
         int temp = 0;

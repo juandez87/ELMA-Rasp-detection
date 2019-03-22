@@ -2,9 +2,9 @@
 #include "detection.h"
 
 
-using namespace stopwatch;
+using namespace detection;
 
-UserInterface::UserInterface(StopWatch& sw) : Process("user input"), _stopwatch(sw) {
+UserInterface::UserInterface(Detection& sw) : Process("user input"), _detection(sw) {
     initscr();   // Start ncurses
     timeout(1);  // Timeout for waiting for user input
     noecho();    // Do not echo user input to the screen
@@ -46,7 +46,7 @@ void UserInterface::update() {
             break;
     }
     
-    dis = _stopwatch.getCM(); //gets the distance in centimeters from the Ultrasonic sensor
+    dis = _detection.getCM(); //gets the distance in centimeters from the Ultrasonic sensor
     if(dis>=22 && dis<=28){
         if (button == true && startkey == false){
             mvprintw(10,1,"state: STOP");
@@ -71,8 +71,8 @@ void UserInterface::update() {
 
     mvprintw(1,1,"ELMA raspberry Pi detection proyect Detection");
     mvprintw(3,1,"start/stop(s), reset(r), quit(q)");
-    //std::cout<<duration_cast<std::chrono::seconds>(_stopwatch.value()).count()<<'\n';
-    double _pwm = 8 + ((std::chrono::duration_cast<std::chrono::milliseconds>(_stopwatch.value()).count())/1000)%37;
+    //std::cout<<duration_cast<std::chrono::seconds>(_detection.value()).count()<<'\n';
+    double _pwm = 8 + ((std::chrono::duration_cast<std::chrono::milliseconds>(_detection.value()).count())/1000)%37;
     
     if (_pwm>=26){
        temp = 52;
@@ -80,18 +80,18 @@ void UserInterface::update() {
     else if(_pwm<10){
        temp = 0;
     }
-    _stopwatch.searching(abs(_pwm-temp)); // this function gives the PWM value to the servo motor
+    _detection.searching(abs(_pwm-temp)); // this function gives the PWM value to the servo motor
     mvprintw(4, 1, "----------------------------------");
     mvprintw(6, 1, "servo PWM %03.1lf", abs(_pwm-temp));
     mvprintw(7, 1, "Distance: %d cm\n", dis);// distance in centimeters
     mvprintw(8, 1, "          %02.0lf inch\n", dis/2.54); // distance in inches
-    //mvprintw(14, 1, "state %s", _stopwatch.current().name()); // 
+    //mvprintw(14, 1, "state %s", _detection.current().name()); // 
     
     
     // NOTE: Since the detection program is running every 10 ms, we should sleep
     //       the ui to give processing time back to the OS. It is debatable
     //       whether this is the right place to put this. It could also become
-    //       an Elma feature, or it could go in the StopWatch class, etc.
+    //       an Elma feature, or it could go in the Detection class, etc.
     //       The number 9999 should also be a parameter and not a constant.
     usleep(9999);
 

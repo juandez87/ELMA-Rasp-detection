@@ -8,25 +8,25 @@
 #include "user_interface.h"
 
 
-namespace stopwatch {
+namespace detection {
 
     using namespace std::chrono;
     using namespace elma;    
 
     //! A stop watch class, that inherits from StateMachine
-    class StopWatch : public StateMachine {
+    class Detection : public StateMachine {
 
         public:
-        //! Make a new stopwatch
-        StopWatch();
+        //! Make a new detection
+        Detection();
 
-        //! Start the stopwatch
+        //! Start the detection
         void begin();
 
-        //! Reset the stopwatch to zero and erase laps
+        //! Reset the detection to zero and erase laps
         void reset();
 
-        //! Stop the stopwatch
+        //! Stop the detection
         void stop();
         
         //! Set-up the GPIO pins of the Raspberry Pi 
@@ -37,7 +37,7 @@ namespace stopwatch {
         
         void searching(double);
 
-        //! Get the time stored by the stopwatch
+        //! Get the time stored by the detection
         high_resolution_clock::duration value();
 
         //! Get a list of lap times

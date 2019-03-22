@@ -17,10 +17,10 @@
 
 using namespace std::chrono;
 using namespace elma;
-using namespace stopwatch;
+using namespace detection;
 
 
-StopWatch::StopWatch() : StateMachine("stopwatch") {
+Detection::Detection() : StateMachine("detection") {
 
     // Define state machine initial states and transitions here
     set_initial(off);
@@ -31,12 +31,12 @@ StopWatch::StopWatch() : StateMachine("stopwatch") {
 
     // Make sure we start in the right condition
     // OUTPUT
-    //_stopwatch.setup();
+    //_detection.setup();
     setup();
     reset();
 }
 
-high_resolution_clock::duration StopWatch::value() {
+high_resolution_clock::duration Detection::value() {
     if ( current().name() == "on" ) {
         return high_resolution_clock::now() - _start_time + _elapsed;
     } else {
@@ -44,27 +44,27 @@ high_resolution_clock::duration StopWatch::value() {
     }
 }
 
-void StopWatch::begin() {
+void Detection::begin() {
     _start_time = high_resolution_clock::now();
     digitalWrite (GREEN, HIGH);
     digitalWrite (RED, LOW);
 }
 
-void StopWatch::reset() {
+void Detection::reset() {
     _elapsed = high_resolution_clock::duration::zero();
     _laps.clear();
     digitalWrite (GREEN, LOW);
     digitalWrite (RED, LOW);
 }
 
-void StopWatch::stop() { 
+void Detection::stop() { 
     _elapsed += high_resolution_clock::now() - _start_time;
     digitalWrite (GREEN, LOW);
     digitalWrite (RED, HIGH);
     
 }
 
-void StopWatch::setup() {
+void Detection::setup() {
         wiringPiSetup();
         pinMode(TRIG, OUTPUT);
         pinMode(ECHO, INPUT);
@@ -82,7 +82,7 @@ void StopWatch::setup() {
         
 }
 
-int StopWatch::getCM() {
+int Detection::getCM() {
     //delay(500);
     digitalWrite(TRIG, HIGH);
     delayMicroseconds(10);
@@ -102,6 +102,6 @@ int StopWatch::getCM() {
     return distance;
 }
 
-void StopWatch::searching(double x) {
+void Detection::searching(double x) {
     softPwmWrite (PWM, x);
 }

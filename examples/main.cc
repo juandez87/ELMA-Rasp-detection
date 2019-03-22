@@ -7,16 +7,16 @@
 
 using namespace std::chrono;
 using namespace elma;
-using namespace stopwatch;
+using namespace detection;
 
 int main() {
 
     Manager m;
-    StopWatch stopwatch;
-    UserInterface ui(stopwatch);
+    Detection detection;
+    UserInterface ui(detection);
 
     m.schedule(ui, 10_ms)
-     .schedule(stopwatch, 10_ms)     
+     .schedule(detection, 10_ms)     
      .init()
      .run();
 

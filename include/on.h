@@ -3,13 +3,13 @@
 
 #include "detection.h"
 
-namespace stopwatch {
+namespace detection {
 
     using namespace std::chrono;
     using namespace elma;
 
-    class StopWatch;  // Declare containing class so it can be refered to here
-                      // before it is defined in stopwatch.h 
+    class Detection;  // Declare containing class so it can be refered to here
+                      // before it is defined in detection.h 
 
     //! The on state of the Servo motor
     class OnState : public State {        
@@ -24,7 +24,7 @@ namespace stopwatch {
         //! \param e The event that triggered the transition        
         void exit(const Event&);
 
-        StopWatch& stopwatch();        
+        Detection& detection();        
 
     };
 

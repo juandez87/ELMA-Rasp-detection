@@ -8,11 +8,11 @@
 namespace {
  
     using namespace elma;
-    using namespace stopwatch;
+    using namespace detection;
 
-    TEST(StopWatch,Construction) { 
+    TEST(Detection,Construction) { 
 
-        StopWatch sw; 
+        Detection sw; 
 
         ASSERT_EQ("off", sw.current().name());
     }

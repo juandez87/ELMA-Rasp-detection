@@ -3,12 +3,12 @@
 
 #include "detection.h"
 
-namespace stopwatch {
+namespace detection {
 
     using namespace std::chrono;
     using namespace elma;
 
-    class StopWatch; 
+    class Detection; 
 
     //! A State class to represen the state in which the Servo motor is off
     class OffState : public State {
@@ -24,7 +24,7 @@ namespace stopwatch {
         void exit(const Event& e);
 
         //! \return A reference to the containing finite state machine object
-        StopWatch& stopwatch();
+        Detection& detection();
 
     };
 
