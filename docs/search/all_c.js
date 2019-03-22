@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['reset',['reset',['../classelma_1_1Event.html#a4d9c5f6fa031752cde8c03b6dbbbd36a',1,'elma::Event']]],
-  ['run',['run',['../classelma_1_1Manager.html#a94d24f5325ef19bf81e61d85e6b54750',1,'elma::Manager::run(high_resolution_clock::duration runtime)'],['../classelma_1_1Manager.html#a5ed2c14e0ba2d7243f33ba3b47c01ad5',1,'elma::Manager::run()'],['../classelma_1_1Manager.html#a884a96a211ad7aff554c2a4f745baac5',1,'elma::Manager::run(std::function&lt; bool()&gt; condition)']]],
-  ['running',['running',['../classmicrowave__example_1_1Power.html#a0a10fe01b374628d6aa7bd549eb30af3',1,'microwave_example::Power']]]
+  ['offstate',['OffState',['../classstopwatch_1_1OffState.html',1,'stopwatch::OffState'],['../classstopwatch_1_1OffState.html#a421aa693834d809dfb2e39ec3bd3cc2e',1,'stopwatch::OffState::OffState()']]],
+  ['onstate',['OnState',['../classstopwatch_1_1OnState.html',1,'stopwatch::OnState'],['../classstopwatch_1_1OnState.html#a247e867c94f178ca06be04de762dbe52',1,'stopwatch::OnState::OnState()']]],
+  ['operator_22_22_20_5fms',['operator&quot;&quot; _ms',['../literals_8h.html#a405b466425bb48420abd4735008eb2b7',1,'elma']]],
+  ['operator_22_22_20_5fs',['operator&quot;&quot; _s',['../literals_8h.html#a2115988d30e8411c5e172089571bc316',1,'elma']]],
+  ['operator_22_22_20_5fus',['operator&quot;&quot; _us',['../literals_8h.html#a266a0d4bf3bc23c9b7841622333cbdc1',1,'elma']]]
 ];

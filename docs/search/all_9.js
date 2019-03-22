@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['manager',['Manager',['../classelma_1_1Manager.html',1,'elma']]],
-  ['manager',['Manager',['../classelma_1_1Manager.html#acab31d0187990cf28cc4d56ef3e63e28',1,'elma::Manager']]],
-  ['microwave_2ecc',['microwave.cc',['../microwave_8cc.html',1,'']]],
-  ['milli_5ftime',['milli_time',['../classelma_1_1Process.html#a713075c26ec23e09576ec966fb4be6ea',1,'elma::Process']]],
-  ['mode',['Mode',['../classtoggle__switch__example_1_1Mode.html#a84e096c4d86cd98d0f5706cf00ce5204',1,'toggle_switch_example::Mode']]],
-  ['mode',['Mode',['../classtoggle__switch__example_1_1Mode.html',1,'toggle_switch_example']]]
+  ['laps',['laps',['../classstopwatch_1_1StopWatch.html#a8b335f9667cd518297ca3be4e57c4972',1,'stopwatch::StopWatch']]],
+  ['last_5fupdate',['last_update',['../classelma_1_1Process.html#a809b1e38a5504600d252f8f62a8bf487',1,'elma::Process']]],
+  ['latest',['latest',['../classelma_1_1Channel.html#aa7b62180f748af0bb2c64aa834d8d077',1,'elma::Channel']]],
+  ['literals_2eh',['literals.h',['../literals_8h.html',1,'']]]
 ];
