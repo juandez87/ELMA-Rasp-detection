@@ -31,7 +31,6 @@ StopWatch::StopWatch() : StateMachine("stopwatch") {
 
     // Make sure we start in the right condition
     // OUTPUT
-    //_stopwatch.setup();
     setup();
     reset();
 }

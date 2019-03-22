@@ -82,17 +82,11 @@ void UserInterface::update() {
     }
     _stopwatch.searching(abs(_pwm-temp)); // this function gives the PWM value to the servo motor
     mvprintw(4, 1, "----------------------------------");
-    mvprintw(6, 1, "servo PWM %03.1lf", abs(_pwm-temp));
+    mvprintw(6, 1, "servo PWM %03.1lf", abs(_pwm-temp)-8);
     mvprintw(7, 1, "Distance: %d cm\n", dis);// distance in centimeters
     mvprintw(8, 1, "          %02.0lf inch\n", dis/2.54); // distance in inches
     //mvprintw(14, 1, "state %s", _stopwatch.current().name()); // 
     
-    
-    // NOTE: Since the detection program is running every 10 ms, we should sleep
-    //       the ui to give processing time back to the OS. It is debatable
-    //       whether this is the right place to put this. It could also become
-    //       an Elma feature, or it could go in the StopWatch class, etc.
-    //       The number 9999 should also be a parameter and not a constant.
     usleep(9999);
 
 }
