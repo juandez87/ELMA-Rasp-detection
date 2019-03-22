@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['basic_2ecc',['basic.cc',['../basic_8cc.html',1,'']]],
-  ['basicprocess',['BasicProcess',['../classbasic__example_1_1BasicProcess.html',1,'basic_example::BasicProcess'],['../classbasic__example_1_1BasicProcess.html#a1f0385c21355b4b9ea3b2368c5ea415c',1,'basic_example::BasicProcess::BasicProcess()']]],
-  ['begin',['begin',['../classstopwatch_1_1StopWatch.html#a0fb3ab295580a7d29d55ca52b41f6294',1,'stopwatch::StopWatch']]]
+  ['lap',['lap',['../classstopwatch_1_1StopWatch.html#a8e25f50201831578ad0b588a4ce16504',1,'stopwatch::StopWatch']]],
+  ['laps',['laps',['../classstopwatch_1_1StopWatch.html#a8b335f9667cd518297ca3be4e57c4972',1,'stopwatch::StopWatch']]]
 ];

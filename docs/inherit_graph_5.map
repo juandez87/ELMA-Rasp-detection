@@ -1,7 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classelma_1_1Process.html" title="An abstract base class for processes. " alt="" coords="5,56,117,83"/>
-<area shape="rect" id="node2" href="$classbasic__example_1_1BasicProcess.html" title="Example: A very basic process class. See the file examples/basic.cc for usage. " alt="" coords="165,5,375,32"/>
-<area shape="rect" id="node3" href="$classelma_1_1StateMachine.html" title="A finite state machine class. " alt="" coords="195,56,345,83"/>
-<area shape="rect" id="node5" href="$classstopwatch_1_1UserInterface.html" title="A user interface for the a StopWatch object. " alt="" coords="179,107,361,133"/>
-<area shape="rect" id="node4" href="$classstopwatch_1_1StopWatch.html" title="A stop watch class, that inherits from StateMachine. " alt="" coords="423,56,585,83"/>
-</map>

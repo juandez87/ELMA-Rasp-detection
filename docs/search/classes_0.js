@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['basicprocess',['BasicProcess',['../classbasic__example_1_1BasicProcess.html',1,'basic_example']]]
+  ['offstate',['OffState',['../classstopwatch_1_1OffState.html',1,'stopwatch']]],
+  ['onstate',['OnState',['../classstopwatch_1_1OnState.html',1,'stopwatch']]]
 ];

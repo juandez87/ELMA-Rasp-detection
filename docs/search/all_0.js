@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['180°_20range_20search_20detection_20object',['180° Range Search Detection Object',['../index.html',1,'']]]
+  ['begin',['begin',['../classstopwatch_1_1StopWatch.html#a0fb3ab295580a7d29d55ca52b41f6294',1,'stopwatch::StopWatch']]]
 ];
