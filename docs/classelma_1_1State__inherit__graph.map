@@ -1,0 +1,4 @@
+<map id="elma::State" name="elma::State">
+<area shape="rect" id="node2" href="$classstopwatch_1_1OffState.html" title="A State class to represen the state in which the Servo motor is off. " alt="" coords="5,80,153,107"/>
+<area shape="rect" id="node3" href="$classstopwatch_1_1OnState.html" title="The on state of the Servo motor. " alt="" coords="177,80,325,107"/>
+</map>
