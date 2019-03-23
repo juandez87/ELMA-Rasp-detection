@@ -32,7 +32,7 @@ the program detection has to be started manually via the keyboard, it also can s
 - **r**: Reset
 - **q**: Quit
 
-After it starts it will run automatically. It has LED indicators:
+After it starts it will run automatically. It also has LED indicators:
 - **RED**: Detects object/stop
 - **GREEN**: Rotating Running
 
@@ -94,12 +94,17 @@ For these Milestones I have accomplish so far in the project:
         }
         
   Also I added a function setup() in detection to initialize all the GPIO Pins.
+  
+  I used the stopwatch interface that will allow the user to see the distance in centimeter and inches, the pulses in seconds of the servo motor and the current status STOP or RUN
+  
+  <img src="images/interface.PNG" width="420"></image> 
 
-- Build the google testof detection: For the Practical test I will trace an area with the distance and angles of measurements, plus adding objects in different places so that the servo motor is stopping when the ultrasonic sensor measures the distance to that object Like the image below.
+- Build the google test of detection: For the Practical test I will trace an area with the distance and angles of measurements, plus adding objects in different places so that the servo motor is stopping when the ultrasonic sensor measures the distance to that object Like the image below. The Idea is that servo has to stop when the object is inside the red area
 
   <img src="images/test.PNG" width="420"></image> <img src="images/test.jpg" width="420"></image>
   
-  the test work 
+  the test worked properly. 
+  The user interface 
   
   To try google test I will put objects in front of the HC-SR04 sensor in different distances so it can determine if the object is in the range of 9 and 11 inches also giving me an output response if the motor should be running or stop. also if the user doesnt have an Ultrasonic sensor they can manually type the distance in a variable ot see the reponse.
   
