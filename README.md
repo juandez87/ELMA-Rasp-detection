@@ -23,7 +23,8 @@ To complete this project I will use:
 
 Execution
 ---
-To run the detection program, type
+before this make sure you do the manual installation step by step indicated on ELMA. After you clone this repository 
+To run the detection program, type 
 
     sudo ./examples/bin/main
 
@@ -103,8 +104,9 @@ For these Milestones I have accomplish so far in the project:
 
   <img src="images/test.PNG" width="420"></image> <img src="images/test.jpg" width="420"></image>
   
-  the test worked properly. 
-  The user interface 
+  the test worked properly. the user interface gave accurate readings.
+  
+  here is a [video](https://youtu.be/C0kMCr8srMU) of the test.
   
   To try google test I will put objects in front of the HC-SR04 sensor in different distances so it can determine if the object is in the range of 9 and 11 inches also giving me an output response if the motor should be running or stop. also if the user doesnt have an Ultrasonic sensor they can manually type the distance in a variable ot see the reponse.
   
