@@ -110,6 +110,7 @@ For these Milestones I have accomplish so far in the project:
   
   To try google test I will put objects in front of the HC-SR04 sensor in different distances so it can determine if the object is in the range of 9 and 11 inches also giving me an output response if the motor should be running or stop. also if the user doesnt have an Ultrasonic sensor they can manually type the distance in a variable ot see the reponse.
   
+  unfortunately the google test was giving me a lot of overflow errors plus I was not able to do ot with the user interface
   
   
  
